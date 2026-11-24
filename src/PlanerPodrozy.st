@@ -24,6 +24,8 @@ Object subclass: PlanerPodrozy [
                 trasa class name].
         trasa jestPusta ifTrue: [
             ^BladPodrozy new signal: 'Nie można dodać do planera pustej trasy'].
+        (trasy includes: trasa) ifTrue: [
+            ^BladPodrozy new signal: 'Trasa ', trasa nazwa, ' jest już w planerze'].
         trasy add: trasa.
         ^trasa
     ]

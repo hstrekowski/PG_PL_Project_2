@@ -12,7 +12,7 @@ Object subclass: Trasa [
     Trasa class >> zOdcinkami: kolekcja nazwa: tekst [
         | nazwaTekst |
         nazwaTekst := BladPodrozy sprawdzTekst: tekst opis: 'Nazwa trasy'.
-        (kolekcja isKindOf: Collection) ifFalse: [
+        ((kolekcja isKindOf: Collection) and: [(kolekcja isKindOf: String) not]) ifFalse: [
             ^BladPodrozy new signal: 'Trasę tworzy się z kolekcji odcinków, a otrzymano obiekt klasy ',
                 kolekcja class name].
         kolekcja do: [:element |

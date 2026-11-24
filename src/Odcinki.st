@@ -95,6 +95,11 @@ OdcinekPodrozy subclass: Rower [
     predkosc [ ^15 ]
     wspolczynnikCO2 [ ^0 ]
     cenaZaPolGodziny [ ^1 ]
+    czasWypozyczenia [ ^2 ]
+
+    czas [
+        ^super czas + self czasWypozyczenia
+    ]
 
     koszt [
         ^(self czasPrzejazdu / 30) ceiling * self cenaZaPolGodziny

@@ -181,6 +181,7 @@ Transcript cr; showCr: 'Niepoprawne operacje na planerze:'.
 probuj value: 'planer dodaj: ''Hel'' (tekst)' value: [planer dodaj: 'Hel'].
 probuj value: 'planer dodaj: w1Pociag (odcinek, nie trasa)' value: [planer dodaj: w1Pociag].
 probuj value: 'planer dodaj: Trasa new (pusta trasa)' value: [planer dodaj: Trasa new].
+probuj value: 'planer dodaj: wariant1 (drugi raz)' value: [planer dodaj: wariant1].
 probuj value: 'PlanerPodrozy new najszybsza (pusty planer)' value: [PlanerPodrozy new najszybsza].
 probuj value: 'PlanerPodrozy new najtansza (pusty planer)' value: [PlanerPodrozy new najtansza].
 
